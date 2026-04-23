@@ -8,7 +8,7 @@ def firstTask():
 with DAG (
     dag_id = 'firstDag',
     start_date = datetime(2026,4,23),
-    schedule_interval = '@once'
+    schedule_interval = '@once',
     catchup = False,
     tags = ['estudo']
 ) as dag:
