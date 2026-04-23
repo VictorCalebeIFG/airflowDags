@@ -16,7 +16,7 @@ with DAG(
         source_objects = 'Teen_Mental_Health_Dataset.csv',
         destination_project_dataset_table = 'raw_airflow.teen_mental_health',
         skip_leading_rows=1,
-        autodetect=True,
+        autodetect=False,
         write_disposition="WRITE_TRUNCATE",
         gcp_conn_id="google_cloud_default"
     )
