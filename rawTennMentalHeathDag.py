@@ -12,7 +12,7 @@ with DAG(
     
     gcstobigqueryoperator = GCSToBigQueryOperator(
         task_id = 'gcstobigqueryoperator',
-        bucket = 'airflow-bucket1-victor',
+        bucket =  'airflow-bucket1-victor',
         source_objects = 'Teen_Mental_Health_Dataset.csv',
         destination_project_dataset_table = 'crack-cogency-355621.raw_airflow.teen_mental_health',
         skip_leading_rows=1,
