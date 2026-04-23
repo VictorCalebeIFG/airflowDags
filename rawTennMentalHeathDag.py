@@ -14,7 +14,7 @@ with DAG(
         task_id = 'gcstobigqueryoperator',
         bucket = 'airflow-bucket1-victor',
         source_objects = 'Teen_Mental_Health_Dataset.csv',
-        destination_project_dataset_table = 'raw_airflow.teen_mental_health',
+        destination_project_dataset_table = 'google-drive-ifg.raw_airflow.teen_mental_health',
         skip_leading_rows=1,
         autodetect=False,
         write_disposition="WRITE_TRUNCATE",
